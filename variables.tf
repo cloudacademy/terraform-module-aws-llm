@@ -1,7 +1,7 @@
 variable "llama_cpp_server_image" {
   description = "The Docker image for the llama.cpp server"
   type        = string
-  default     = "ghcr.io/ggerganov/llama.cpp:server"
+  default     = "ghcr.io/ggerganov/llama.cpp:server" # TODO vendor
 }
 
 variable "system_prompt" {

@@ -1,4 +1,4 @@
-# AWS LLM Terrfaorm Module
+# AWS LLM Terraform Module
 
 This module deploys a [lllama.cpp](https://github.com/ggerganov/llama.cpp) server on an AWS instance and serves the [Phi3](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf) model via a REST API. See the [LLaMA.cpp HTTP Server](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md) readme for more information.
 
