@@ -2,6 +2,15 @@
 
 This module deploys a [lllama.cpp](https://github.com/ggerganov/llama.cpp) server on an AWS instance and serves the [Phi3](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf) model via a REST API. See the [LLaMA.cpp HTTP Server](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md) readme for more information.
 
+Once deployed the `url` output will be able to accept and respond to web requests:
+
+```bash
+curl --request POST \
+    --url <URL-OUTPUT> \
+    --header "Content-Type: application/json" \
+    --data '{"prompt": "In one sentence, why is the sky blue?", "n_predict": 128}'
+```
+
 See the [variables.tf](variables.tf) file for configurable options, and the [outputs.tf](outputs.tf) file for the available outputs.
 
 ## Testing locally
