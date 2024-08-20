@@ -34,6 +34,7 @@ Notes:
 
 - By default, the server is publicly accessible on port 8000, you can change this by modifying the `variables.tf` file and changing the CIDR block range.
 - The default model appears to work equally well on x86_64 and arm64 architectures, with the latter being cheaper.
+- In theory, any GGUF model suppoted by llama.cpp should work, testing recommended when using other models.
 
 ## Usage
 
