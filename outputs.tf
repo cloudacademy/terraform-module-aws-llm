@@ -1,5 +1,5 @@
 output "url" {
-  value       = "http://aws_instance.server.public_ip:${var.port}/"
+  value       = "http://${aws_instance.server.public_ip}:${var.port}/"
   description = "The URL of the llama.cpp server"
 }
 
