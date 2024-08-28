@@ -19,7 +19,7 @@ variable "model_url" {
 variable "instance_type" {
   description = "The instance type for the server"
   type        = string
-  default     = "t4g.xlarge"
+  default     = "m5.xlarge"
 }
 
 variable "instance_name" {
@@ -53,6 +53,6 @@ variable "cidr_block" {
 variable "ami_ssm_path" {
   description = "The SSM parameter path for the AMI ID"
   type        = string
-  default     = "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64"
+  default     = "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64"
 }
 
