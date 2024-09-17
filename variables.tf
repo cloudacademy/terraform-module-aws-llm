@@ -13,7 +13,7 @@ variable "system_prompt" {
 variable "model_url" {
   description = "The URL of the model to download"
   type        = string
-  default     = "https://assets.labs.cloudacademy.com/customizing-large-language-models-using-ollama/Phi-3-mini-4k-instruct-q4.gguf"
+  default     = "https://assets.labs.platform.qa.com/customizing-large-language-models-using-ollama/Phi-3-mini-4k-instruct-q4.gguf"
 }
 
 variable "instance_type" {
